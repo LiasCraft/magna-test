@@ -1,0 +1,1320 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Nov 06 2024 15:46:17 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="672b8b862512c20c15e46356" data-wf-site="672b8b862512c20c15e4634c">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/magnas.webflow.css" rel="stylesheet" type="text/css">
+  <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="7918181e-ef99-0888-b698-e6396f2e22a0"] {-webkit-transform:translate3d(0vw, 0vw, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0vw, 0vw, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0vw, 0vw, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0vw, 0vw, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}</style>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Unbounded:regular"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon"><!--  Accordion style  -->
+  <style>
+.js-accordion-body {
+	display: none;
+}
+</style>
+  <!--  Hide tap on mobile  -->
+  <style>
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+</style>
+  <!--  Phone Field Style  -->
+  <style>
+.alabel {
+    pointer-events: none;
+}
+.iti {
+    width: 100%;
+}
+.iti__selected-flag {
+    padding: 0 0 0 1rem !important;
+}
+@media (max-width: 480px) {
+    .iti__selected-flag {
+        padding: 0 0 0 0.5rem !important;
+    }
+}
+.iti--allow-dropdown input {
+    padding-left: 4rem !important;
+}
+@media (max-width: 480px) {
+    .iti--allow-dropdown input {
+        padding-left: 3rem !important;
+    }
+}
+.input.phone {
+    padding-left: 0px !important;
+}
+.iti__country-list {
+    background-color: #F5FAFF !important;
+    border-radius: 0.5rem !important;
+}
+  .iti__arrow {
+    border-top: 0.3rem solid #f5faff !important;
+    border-left: 0.25rem solid transparent !important;
+    border-right: 0.25rem solid transparent !important;
+  }
+  .iti__arrow--up {
+    border-top: none !important;
+    border-bottom: 0.3rem solid #f5faff !important;
+    border-left: 0.25rem solid transparent !important;
+    border-right: 0.25rem solid transparent !important;
+  }
+.iti__country-list::-webkit-scrollbar {
+    display: none !important;
+}
+  .iti__country-list {
+    max-height: 16rem !important;
+    /*width: 30rem !important;*/
+  }
+  @media (max-width: 480px) {
+    .iti__country-list {
+      max-height: calc(98vh - 3.5rem) !important;
+    }
+  }
+  @media (max-width: 480px) {
+    .iti-mobile .iti--container {
+      top: 3.5rem !important;
+      bottom: 0px !important;
+      left: 0px !important;
+      right: 0px !important;
+    }
+  }
+.iti__country {
+    color: #1E274A !important;
+}
+.iti__country.iti__highlight {
+    background-color: #e9f3fd !important;
+}
+.iti__divider {
+    border-bottom: 1px solid #2e2e2e !important;
+}
+</style>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!--  Swiper slider styles  -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+  <div bind="c0e1b7d4-d391-8960-a465-76333faa1ed7" class="navbar-hero">
+    <div bind="c0e1b7d4-d391-8960-a465-76333faa1ed8" data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-container-2 w-nav">
+      <div class="container-9 remove-white">
+        <div class="asana-navbar">
+          <a href="index.html" class="menu-logo w-nav-brand"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 254 54" fill="none" class="brand-logo-2">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M240.8 13.7824C240.184 12.4477 238.867 11.584 237.443 11.584H235.372C233.895 11.584 232.529 12.48 231.894 13.8609L218.73 42.4174H225.037L228.124 35.5357H244.606L247.693 42.4174H254L240.8 13.7778V13.7824ZM230.453 30.3445L235.607 17.6297C235.749 17.2648 236.064 17.0385 236.401 17.0523C236.698 17.0662 236.96 17.2694 237.101 17.5742L242.277 30.3445H230.453ZM103.688 12.1292C103.506 12.5126 99.1552 21.879 93.203 34.7047C93.101 34.9587 92.8704 35.1342 92.6131 35.1481C92.3204 35.1619 92.0498 34.9725 91.9434 34.6723C86.0045 21.879 81.6491 12.5172 81.4451 12.1292C81.312 11.8706 81.1036 11.7367 81.1036 11.7367C80.9572 11.6443 80.7886 11.5889 80.6157 11.5889H72.783V42.4269H78.4246V19.3757C78.4246 19.3111 78.4557 19.2695 78.5178 19.251C78.5799 19.2326 78.6242 19.2556 78.6553 19.3203L80.8949 24.0324C83.1464 28.7691 85.3973 33.5045 87.6456 38.2425C87.7121 38.4365 87.823 38.7136 88.0182 39.0045C89.1223 40.6438 91.4634 40.6534 92.5947 40.658H92.5954H92.6179C93.566 40.6581 96.2794 40.6584 97.1682 38.9861C97.2524 38.8244 97.3057 38.6812 97.3367 38.5796C98.8578 35.3633 100.38 32.148 101.902 28.9328C103.425 25.7167 104.947 22.5006 106.469 19.2834C106.496 19.2233 106.54 19.2002 106.606 19.2141C106.669 19.2279 106.7 19.2695 106.7 19.3388V42.4223H112.341V11.5889H104.509C104.424 11.5889 104.185 11.5981 103.959 11.7736C103.79 11.9029 103.71 12.0646 103.679 12.1339L103.688 12.1292ZM135.125 11.584C136.549 11.584 137.866 12.4477 138.483 13.7824V13.7778L151.682 42.4174H145.375L142.288 35.5357H125.807L122.72 42.4174H116.413L129.577 13.8609C130.211 12.48 131.577 11.584 133.054 11.584H135.125ZM133.289 17.6297L128.135 30.3445H139.96L134.784 17.5742C134.642 17.2694 134.38 17.0662 134.083 17.0523C133.746 17.0385 133.431 17.2648 133.289 17.6297ZM209.487 24.1467H190.527V11.5889H184.654V42.4223H190.527V29.6243H209.337V42.4223H215.537V11.5889H209.412L209.487 24.1467ZM157.022 12.919C158.269 11.6212 159.808 11.5889 160.101 11.5889H180.516V17.0387C177.367 17.0503 174.217 17.0607 171.067 17.0711C167.917 17.0815 164.767 17.0919 161.617 17.1034V42.4269H155.745V16.1243C155.745 14.8727 156.233 13.7411 157.022 12.919Z" fill="#1E274A"></path>
+              <path d="M51.9593 2.62793C46.7301 12.8211 41.5053 23.0142 36.2761 33.2073C36.2096 33.332 36.0854 33.5537 35.9257 33.8308C35.2782 34.9531 34.1161 36.9437 32.3775 38.5602C32.0493 38.865 31.7832 39.0913 31.486 39.3222C30.9626 39.7287 30.426 40.0751 29.8715 40.3753C29.5655 40.5415 29.2329 40.6986 28.8869 40.8417C26.585 41.7932 24.3807 41.7562 22.7884 41.5207C21.5199 41.3221 18.7567 40.694 16.2242 38.3801C14.7694 37.0499 13.8868 35.6182 13.3767 34.6021C12.5828 33.0087 12.1127 31.249 11.9973 29.4109C11.9707 29.0044 11.9663 28.6026 11.984 28.2008C11.984 28.113 11.9885 28.0207 11.9929 27.9375C11.9929 27.8359 11.9973 27.7297 12.0062 27.6281C12.0062 27.6142 12.0062 27.5912 12.0106 27.5681C12.0106 27.5403 12.0106 27.508 12.0151 27.4803C12.024 27.3602 12.0373 27.2309 12.0506 27.1108C12.0639 26.9584 12.086 26.806 12.1082 26.6582C12.1526 26.3257 12.2147 25.9978 12.2856 25.6745C12.3211 25.522 12.3566 25.365 12.3965 25.208C12.4675 24.9355 12.5429 24.6584 12.636 24.3951C12.6493 24.3351 12.6715 24.2843 12.6937 24.2242C12.7336 24.0903 12.7779 23.9656 12.8312 23.8409C12.8888 23.6885 12.9421 23.5453 13.0041 23.3975C13.0662 23.2497 13.1328 23.1065 13.1949 22.9634C13.3146 22.6955 13.4432 22.4369 13.5852 22.1782C13.6295 22.0905 13.6827 22.0027 13.7315 21.915C13.8469 21.7071 13.971 21.5085 14.0952 21.3099C14.2593 21.0605 14.4234 20.8204 14.6009 20.5848C14.6718 20.4832 14.7472 20.3908 14.8226 20.2939C14.9158 20.1784 15.0045 20.0675 15.102 19.9567C15.1952 19.8412 15.2883 19.7304 15.3903 19.6242C15.4613 19.5456 15.5323 19.4718 15.6032 19.3979C15.6875 19.2962 15.7762 19.2131 15.8649 19.1254C16.0024 18.9914 16.1399 18.8621 16.2818 18.7328C16.5967 18.4464 16.9205 18.1786 17.2665 17.9245C17.2709 17.9245 17.2753 17.9199 17.2798 17.9153C17.3818 17.8414 17.4838 17.7675 17.5902 17.6982C17.6967 17.6243 17.8031 17.5551 17.9096 17.4858C18.0205 17.4119 18.1313 17.3426 18.2422 17.2779C18.3753 17.1994 18.5128 17.1209 18.6458 17.047C18.8632 16.9223 19.0805 16.8115 19.3111 16.7052C19.3599 16.6775 19.4131 16.6544 19.4664 16.6313C19.5728 16.5852 19.6793 16.5344 19.7857 16.4882L21.4135 15.7815C31.5924 11.3985 41.7714 7.01093 51.9504 2.62793H51.9593Z" fill="#1FAAE3"></path>
+              <path d="M51.8574 14.7426V13.9297C51.161 15.3199 50.4603 16.7147 49.7639 18.0956C48.7039 20.1786 47.6483 22.2569 46.5794 24.3029C44.8541 27.6329 43.4436 30.2978 42.3614 32.3022C42.153 32.6902 41.4699 34.025 40.503 35.7384C40.0773 36.4866 38.9418 38.4126 37.864 39.8489C37.0302 40.9666 35.0521 43.6084 31.7478 45.2942C27.8713 47.2709 24.2122 46.9892 21.7196 46.7491C14.0732 46.0239 8.9371 41.7056 7.31822 40.3108C3.51275 37.0224 1.27736 33.3091 0 30.6165V48.3702C0 51.4831 2.42167 54.0002 5.40661 54.0002C19.0318 54.0002 32.657 54.0002 46.2822 54.0002C49.3647 54.0002 51.8574 51.4045 51.8574 48.1947C51.8574 37.0409 51.8574 25.8871 51.8574 14.7379V14.7426ZM37.1943 41.9873C37.1943 41.9873 37.2076 41.9642 37.2165 41.9504C37.1988 41.9827 37.181 42.0104 37.1633 42.0428C37.1721 42.0289 37.1854 42.0058 37.1943 41.992V41.9873Z" fill="#1951A0"></path>
+              <path d="M5.57516 0.00461854C2.49707 0.00461854 0 2.60486 0 5.81013V12.9504H0.0221764C0.0354823 13.9064 0.0487882 14.8625 0.062094 15.8185C0.128623 17.2087 0.288294 18.4834 0.501187 19.6334C0.700775 20.6911 0.935846 21.6425 1.18866 22.4831C1.2951 22.8525 1.40599 23.1943 1.51687 23.5222C3.19784 28.4317 5.82353 31.5308 7.8682 33.9371C7.8061 33.7246 7.72183 33.429 7.63313 33.0641C7.34483 31.8772 6.96784 29.8081 7.13638 27.3002C7.36701 23.8963 8.48914 21.3561 9.05242 20.2246C10.729 16.8669 12.9643 14.9641 13.674 14.3914C14.9425 13.3661 16.1444 12.7148 17.0315 12.2992C18.881 11.4494 21.6619 10.1885 25.0771 8.69672C27.7649 7.52361 29.743 6.68765 30.843 6.22118C34.0763 4.85409 38.8398 2.82193 45.3286 0H5.57516V0.00461854Z" fill="#213263"></path>
+            </svg></a>
+          <nav role="navigation" class="asana-navmenu-wrapper w-nav-menu">
+            <div class="menu-bg"></div>
+            <ul role="list" class="asana-nav-list w-list-unstyled">
+              <li class="list-item">
+                <div data-delay="0" data-hover="true" bind="c0e1b7d4-d391-8960-a465-76333faa1eec" class="asana-dropdown w-dropdown">
+                  <div class="asana-nav-link dropdown menu-1 w-dropdown-toggle">
+                    <a href="/#branch" class="menu-drop-wrapper desk w-inline-block">
+                      <div>Отраслевые решения</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 16 13" fill="none" class="nav-arrow-2">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.64021 0.25L4.64884 0.250199C6.34403 0.289216 7.9241 1.11517 8.96466 2.48664L12.0642 6.57179L14.9163 4.40782L16 13L8.0171 9.64243L10.8692 7.47845L7.76969 3.3933C6.9982 2.37648 5.8432 1.78065 4.62259 1.75L2.01937e-05 1.75011L-1.52588e-05 0.25011L4.64021 0.25Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                    <div class="menu-drop-wrapper mobile">
+                      <div>Отраслевые решения</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 16 13" fill="none" class="nav-arrow-2">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.64021 0.25L4.64884 0.250199C6.34403 0.289216 7.9241 1.11517 8.96466 2.48664L12.0642 6.57179L14.9163 4.40782L16 13L8.0171 9.64243L10.8692 7.47845L7.76969 3.3933C6.9982 2.37648 5.8432 1.78065 4.62259 1.75L2.01937e-05 1.75011L-1.52588e-05 0.25011L4.64021 0.25Z" fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav class="asana-dropdown-list w-dropdown-list">
+                    <div class="w-layout-blockcontainer section-container---04 w-container">
+                      <div class="asana-list-wrapper">
+                        <div class="asana-list-one _w-100">
+                          <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1ef8" href="/branch-solutions/korporativnym-avtoparkam" class="dropdown-link w-inline-block">
+                            <div class="dropdown-text">Корпоративным автопаркам</div>
+                            <div class="dropdown-arrow-wrapper-2">
+                              <div>Подробнее о решении</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 23 13" fill="none" class="svg-5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3.5V0H1.75V3.5C1.75 5.84721 3.65279 7.75 6 7.75H15.5V4.16987L23 8.5L15.5 12.8301V9.25H6C2.82436 9.25 0.25 6.67564 0.25 3.5Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1f00" href="/branch-solutions/dileram-i-prodavcam-avtotovarov" class="dropdown-link w-inline-block">
+                            <div class="dropdown-text">Дилерам и продавцам автотоваров</div>
+                            <div class="dropdown-arrow-wrapper-2">
+                              <div>Подробнее о решении</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 23 13" fill="none" class="svg-5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3.5V0H1.75V3.5C1.75 5.84721 3.65279 7.75 6 7.75H15.5V4.16987L23 8.5L15.5 12.8301V9.25H6C2.82436 9.25 0.25 6.67564 0.25 3.5Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1f08" href="/branch-solutions/promyshlennym-predpriyatiyam" class="dropdown-link w-inline-block">
+                            <div class="dropdown-text">Промышленным предприятиям</div>
+                            <div class="dropdown-arrow-wrapper-2">
+                              <div>Подробнее о решении</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 23 13" fill="none" class="svg-5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3.5V0H1.75V3.5C1.75 5.84721 3.65279 7.75 6 7.75H15.5V4.16987L23 8.5L15.5 12.8301V9.25H6C2.82436 9.25 0.25 6.67564 0.25 3.5Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1f10" href="/branch-solutions/blendingovym-zavodam" class="dropdown-link w-inline-block">
+                            <div class="dropdown-text">Блендинговым заводам</div>
+                            <div class="dropdown-arrow-wrapper-2">
+                              <div>Подробнее о решении</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 23 13" fill="none" class="svg-5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3.5V0H1.75V3.5C1.75 5.84721 3.65279 7.75 6 7.75H15.5V4.16987L23 8.5L15.5 12.8301V9.25H6C2.82436 9.25 0.25 6.67564 0.25 3.5Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1f18" href="/branch-solutions/roznichnym-potrebitelyam" class="dropdown-link w-inline-block">
+                            <div class="dropdown-text">Розничным потребителям</div>
+                            <div class="dropdown-arrow-wrapper-2">
+                              <div>Подробнее о решении</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 23 13" fill="none" class="svg-5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3.5V0H1.75V3.5C1.75 5.84721 3.65279 7.75 6 7.75H15.5V4.16987L23 8.5L15.5 12.8301V9.25H6C2.82436 9.25 0.25 6.67564 0.25 3.5Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="dropdown-content-wrapper dropdown-1">
+                          <div class="dropdown-item">
+                            <a href="/branch-solutions/korporativnym-avtoparkam" class="button border w-inline-block">
+                              <div>Подробнее</div>
+                            </a>
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img loading="lazy" src="images/auto-2.jpg" alt="" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                          <div class="dropdown-item _1">
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div>
+                            <a href="#" class="button border w-inline-block">
+                              <div>Подробнее</div>
+                            </a><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img loading="lazy" src="images/auto-2.jpg" alt="" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                          <div class="dropdown-item _2">
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div>
+                            <a href="#" class="button border w-inline-block">
+                              <div>Подробнее</div>
+                            </a><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img loading="lazy" src="images/diler_1.jpg" alt="" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                          <div class="dropdown-item _3">
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div>
+                            <a href="#" class="button border w-inline-block">
+                              <div>Подробнее</div>
+                            </a><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img loading="lazy" src="images/factory.jpg" alt="" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                          <div class="dropdown-item _4">
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div>
+                            <a href="#" class="button border w-inline-block">
+                              <div>Подробнее</div>
+                            </a><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img loading="lazy" src="images/oil_1.jpg" alt="" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                          <div class="dropdown-item _5">
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div>
+                            <a href="#" class="button border w-inline-block">
+                              <div>Подробнее</div>
+                            </a><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img loading="lazy" src="images/b2p-2.jpg" alt="" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </li>
+              <li class="list-item menu-2">
+                <div data-delay="0" data-hover="true" bind="c0e1b7d4-d391-8960-a465-76333faa1f5e" class="asana-dropdown w-dropdown">
+                  <div class="asana-nav-link dropdown menu-2 w-dropdown-toggle">
+                    <a href="catalog.html" class="menu-drop-wrapper desk w-inline-block">
+                      <div>Каталог продукции</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 16 13" fill="none" class="nav-arrow-2">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.64021 0.25L4.64884 0.250199C6.34403 0.289216 7.9241 1.11517 8.96466 2.48664L12.0642 6.57179L14.9163 4.40782L16 13L8.0171 9.64243L10.8692 7.47845L7.76969 3.3933C6.9982 2.37648 5.8432 1.78065 4.62259 1.75L2.01937e-05 1.75011L-1.52588e-05 0.25011L4.64021 0.25Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                    <div class="menu-drop-wrapper mobile">
+                      <div>Каталог продукции</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 16 13" fill="none" class="nav-arrow-2">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.64021 0.25L4.64884 0.250199C6.34403 0.289216 7.9241 1.11517 8.96466 2.48664L12.0642 6.57179L14.9163 4.40782L16 13L8.0171 9.64243L10.8692 7.47845L7.76969 3.3933C6.9982 2.37648 5.8432 1.78065 4.62259 1.75L2.01937e-05 1.75011L-1.52588e-05 0.25011L4.64021 0.25Z" fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav class="asana-dropdown-list w-dropdown-list">
+                    <div class="w-layout-blockcontainer section-container---04 w-container">
+                      <div class="asana-list-wrapper">
+                        <div class="asana-list-one menu-2">
+                          <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1f6e" href="/catalog?category=Автомобильные+антифризы" class="dropdown-link w-inline-block">
+                            <div class="dropdown-text">Автомобильные антифризы</div>
+                            <div class="dropdown-arrow-wrapper-2">
+                              <div>Перейти в каталог</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 23 13" fill="none" class="svg-5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3.5V0H1.75V3.5C1.75 5.84721 3.65279 7.75 6 7.75H15.5V4.16987L23 8.5L15.5 12.8301V9.25H6C2.82436 9.25 0.25 6.67564 0.25 3.5Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1f76" href="/catalog?category=Индустриальные+антифризы" class="dropdown-link w-inline-block">
+                            <div class="dropdown-text">Индустриальный антифриз</div>
+                            <div class="dropdown-arrow-wrapper-2">
+                              <div>Перейти в каталог</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 23 13" fill="none" class="svg-5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3.5V0H1.75V3.5C1.75 5.84721 3.65279 7.75 6 7.75H15.5V4.16987L23 8.5L15.5 12.8301V9.25H6C2.82436 9.25 0.25 6.67564 0.25 3.5Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1f7e" href="/catalog?category=Теплоноситель+для+систем+отопления" class="dropdown-link hide w-inline-block">
+                            <div class="dropdown-text">Теплоноситель для систем отопления</div>
+                            <div class="dropdown-arrow-wrapper-2">
+                              <div>Перейти в каталог</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 23 13" fill="none" class="svg-5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3.5V0H1.75V3.5C1.75 5.84721 3.65279 7.75 6 7.75H15.5V4.16987L23 8.5L15.5 12.8301V9.25H6C2.82436 9.25 0.25 6.67564 0.25 3.5Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1f86" href="/catalog?category=Водно-гликолевые+растворы+и+хладогенты" class="dropdown-link w-inline-block">
+                            <div class="dropdown-text">Водно-гликолевые растворы и хладагенты</div>
+                            <div class="dropdown-arrow-wrapper-2">
+                              <div>Перейти в каталог</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 23 13" fill="none" class="svg-5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3.5V0H1.75V3.5C1.75 5.84721 3.65279 7.75 6 7.75H15.5V4.16987L23 8.5L15.5 12.8301V9.25H6C2.82436 9.25 0.25 6.67564 0.25 3.5Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </a>
+                          <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1f8e" href="/catalog?category=Гликолевые+ингибиторы+коррозии" class="dropdown-link w-inline-block">
+                            <div class="dropdown-text">Гликолевые ингибиторы коррозии</div>
+                            <div class="dropdown-arrow-wrapper-2">
+                              <div>Перейти в каталог</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 23 13" fill="none" class="svg-5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3.5V0H1.75V3.5C1.75 5.84721 3.65279 7.75 6 7.75H15.5V4.16987L23 8.5L15.5 12.8301V9.25H6C2.82436 9.25 0.25 6.67564 0.25 3.5Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                        <a href="/products#all" class="dropdown-content-wrapper w-inline-block">
+                          <div class="dropdown-item">
+                            <div class="button border">
+                              <div>Подробнее</div>
+                            </div>
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img sizes="100vw" srcset="images/антифриз-p-500.jpg 500w, images/антифриз-p-800.jpg 800w, images/антифриз-p-1080.jpg 1080w, images/антифриз.jpg 1106w" alt="" src="images/антифриз.jpg" loading="lazy" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                          <div class="dropdown-item _1a">
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div>
+                            <div class="button border">
+                              <div>Подробнее</div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img sizes="100vw" srcset="images/антифриз-p-500.jpg 500w, images/антифриз-p-800.jpg 800w, images/антифриз-p-1080.jpg 1080w, images/антифриз.jpg 1106w" alt="" src="images/антифриз.jpg" loading="lazy" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                          <div class="dropdown-item _2a">
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div>
+                            <div class="button border">
+                              <div>Подробнее</div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img sizes="100vw" srcset="images/1-p-500.jpg 500w, images/1-p-800.jpg 800w, images/1-p-1080.jpg 1080w, images/1.jpg 1100w" alt="" src="images/1.jpg" loading="lazy" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                          <div class="dropdown-item _3a">
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div>
+                            <div class="button border">
+                              <div>Подробнее</div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img sizes="100vw" srcset="images/2-p-500.jpg 500w, images/2-p-800.jpg 800w, images/2-p-1080.jpg 1080w, images/2.jpg 1100w" alt="" src="images/2.jpg" loading="lazy" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                          <div class="dropdown-item _4a">
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div>
+                            <div class="button border">
+                              <div>Подробнее</div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img sizes="100vw" srcset="images/2-p-500.jpg 500w, images/2-p-800.jpg 800w, images/2-p-1080.jpg 1080w, images/2.jpg 1100w" alt="" src="images/2.jpg" loading="lazy" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                          <div class="dropdown-item _5a">
+                            <div class="dropdown-text image">Ответственный поставщик высококачественных продуктов</div>
+                            <div class="button border">
+                              <div>Подробнее</div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1042 26" fill="none" class="dropdown-long-arrow">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1033.13 2.24144L1041.5 0L1039.26 8.36516L1036.73 5.83361L1021.72 20.844C1018.58 23.9853 1014.31 25.75 1009.87 25.75H0V24.25H1009.87C1013.92 24.25 1017.8 22.6433 1020.66 19.7834L1035.67 4.77294L1033.13 2.24144Z" fill="currentColor" fill-opacity="0.6"></path>
+                            </svg><img sizes="100vw" srcset="images/3-p-500.jpg 500w, images/3-p-800.jpg 800w, images/3-p-1080.jpg 1080w, images/3.jpg 1100w" alt="" src="images/3.jpg" loading="lazy" class="menu-image">
+                            <div class="gradient-menu"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </li>
+              <li class="list-item menu-3">
+                <a href="blog.html" class="menu-link-wrapper w-inline-block">
+                  <div class="asana-nav-link">База знаний</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 20 10" fill="none" class="nav-arrow mobile">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.669921L20 5.00005L12.5 9.33018L12.5 5.75005L4.44119e-07 5.75005L3.12985e-07 4.25005L12.5 4.25005L12.5 0.669921Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-item menu-4">
+                <a href="contact.html" class="menu-link-wrapper w-inline-block">
+                  <div class="asana-nav-link">Контакты</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 20 10" fill="none" class="nav-arrow mobile">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.669921L20 5.00005L12.5 9.33018L12.5 5.75005L4.44119e-07 5.75005L3.12985e-07 4.25005L12.5 4.25005L12.5 0.669921Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="div-block-38">
+              <a href="tel:88001015093" class="contact-heading phone menu">+7 (800) 101 50 93</a><button data-w-id="c0e1b7d4-d391-8960-a465-76333faa1fe2" data-wait="Загрузка" class="button-form contact menu submit-button w-button" type="submit">Обратная связь<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 36 20" fill="none" class="svg-arrow">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666748 8.66699V0.666992H2.66675V8.66699C2.66675 10.8761 4.45761 12.667 6.66675 12.667H25.6667V7.89349L35.6667 13.667L25.6667 19.4405V14.667H6.66675C3.35304 14.667 0.666748 11.9807 0.666748 8.66699Z" fill="currentColor"></path>
+                </svg></button>
+              <a href="#" class="social-link-mobile">Telegram</a>
+              <a href="#" class="social-link-mobile">Вконтакте</a>
+              <a href="#" class="social-link-mobile">WhatsApp</a>
+              <a href="#" class="social-link-mobile">Youtube</a>
+            </div>
+            <div scroll="both" class="menu-overlay"></div>
+          </nav>
+          <div class="menu-phone">
+            <a href="tel:+78004440471" class="asana-nav-link phone">8 800 444 04 71</a>
+          </div>
+          <div class="nav-btn-wrapper">
+            <a data-w-id="c0e1b7d4-d391-8960-a465-76333faa1ff3" href="#" class="menu-feedback w-button">обратная связь</a>
+          </div>
+          <div data-w-id="c0e1b7d4-d391-8960-a465-76333faa1ff5" class="asana-menu-btn w-nav-button">
+            <div data-w-id="146fda1e-321e-9e3e-c671-748cd5ad9834" class="menu-icon-mobile">
+              <div>Меню</div>
+              <div class="hamburger-menu-hm10 w-nav-button">
+                <div class="top-bar-hm10"></div>
+                <div class="bottom-bar-hm10"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-bg"></div>
+          <div class="modal">
+            <div scroll="both" class="modal-overlay modal_btn"></div>
+            <div class="modal-content-wrapper">
+              <div class="form-footer-wrapper modal">
+                <h2 class="heading-4">Обратная связь</h2>
+                <p class="contact-modal-text">Оставьте заявку и мы свяжемся с вами в ближайшее время.</p>
+                <div bind="c0e1b7d4-d391-8960-a465-76333faa1fff" class="form-block modal-form w-form">
+                  <form id="wf-form-Feedback" name="wf-form-Feedback" data-name="Feedback" method="post" data-wf-page-id="672b8b862512c20c15e46356" data-wf-element-id="c0e1b7d4-d391-8960-a465-76333faa2000">
+                    <div class="w-layout-grid grid contact mobile"><input class="text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Имя *" type="text" id="Feedback-name" required=""><input class="text-field w-node-_7758faeb-9d7e-b77f-294f-bcd77d073089-3faa1ed7 w-input" maxlength="256" name="phone-2" data-name="Phone 2" placeholder="8 (999) 000-00-00" type="number" id="phone-2" required=""><input class="text-field mobile w-node-c0e1b7d4-d391-8960-a465-76333faa2004-3faa1ed7 w-input" maxlength="256" name="Email" data-name="Email" placeholder="E-mail *" type="email" id="Feedback-email" required=""></div><button data-wait="Загрузка" class="button-form modal-form submit-button w-button" type="submit">Отправить<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 36 20" fill="none" class="svg-arrow">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666748 8.66699V0.666992H2.66675V8.66699C2.66675 10.8761 4.45761 12.667 6.66675 12.667H25.6667V7.89349L35.6667 13.667L25.6667 19.4405V14.667H6.66675C3.35304 14.667 0.666748 11.9807 0.666748 8.66699Z" fill="currentColor"></path>
+                      </svg></button>
+                    <div href="#" class="text-14px underline">Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#" class="link-text">политикой конфиденциальности</a> и <a href="#" class="link-text">обработки персональных данных</a>
+                    </div>
+                  </form>
+                  <div class="success-message w-form-done">
+                    <div class="text-block-6">Спасибо, ваша заявка принята!</div>
+                  </div>
+                  <div class="error-message w-form-fail">
+                    <div class="text-block-5">Ошибка отправки формы!</div>
+                  </div>
+                </div>
+              </div>
+              <div scroll="both" data-w-id="c0e1b7d4-d391-8960-a465-76333faa2018" class="form-close-button modal_btn"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 22 21" fill="none" class="cross">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3693 20.9298L0.570312 1.13084L1.63097 0.0701763L21.43 19.8692L20.3693 20.9298Z" fill="currentColor"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.568198 19.8692L20.3672 0.0701752L21.4278 1.13084L1.62886 20.9298L0.568198 19.8692Z" fill="currentColor"></path>
+                </svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div bind="0c674051-515e-20be-76fd-414bfeb6492b" class="custom-styles w-embed">
+      <style>
+/*Скрыть обратную связь*/
+  @media (max-width: 1500px) {
+      .menu-feedback {
+          display: none;
+      }
+  @media (max-width: 1270px) {
+      .menu-phone {
+          display: none;
+      }
+</style>
+      <style>
+.link {
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+.link::before,
+.link::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #1951a0;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+.link::before {
+    content: '';
+    /* show by default */
+}
+</style>
+      <style>
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+/* Отключение стиля при размере экрана выше 992px */
+@media (max-width: 991px) {
+    .underline-trail::before,
+    .underline-trail:hover::before {
+        transform: none; /* Сбрасываем трансформацию */
+        transition: none; /* Отключаем анимацию */
+    }
+}
+</style>
+    </div>
+  </div>
+  <section class="breadcrumbs">
+    <div class="bread-wrapper">
+      <div class="bread-link-wrapper">
+        <a href="index.html" class="bread-link home">Главная</a><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 17 6" fill="none" class="bread-arrow first">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 0.113281L16.5 3.00003L11.5 5.88678V3.50003H0V2.50003H11.5V0.113281Z" fill="currentColor"></path>
+        </svg>
+        <a href="/products" class="bread-link to-blog">Каталог товаров</a>
+        <a href="/products" class="bread-link back">Вернуться назад</a><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 17 6" fill="none" class="bread-arrow second">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 0.113281L16.5 3.00003L11.5 5.88678V3.50003H0V2.50003H11.5V0.113281Z" fill="currentColor"></path>
+        </svg>
+        <a bind="0fa003a9-e109-502d-15ae-e5de4fb637a7" href="#" class="bread-link"></a>
+      </div>
+    </div>
+    <div class="bread-line-wrapper">
+      <div class="bread-line"></div>
+    </div>
+  </section>
+  <section class="card-section">
+    <div class="card-wrapper">
+      <div class="card-heading-wrapper mobile">
+        <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;tip-tovara&quot;}}}}}" class="card-text-medium text-22px w-dyn-bind-empty"></div>
+        <h1 sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;name&quot;}}}}}" class="card-heading main w-dyn-bind-empty"></h1>
+        <p sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;prinadlezhnost&quot;}}}}}" class="card-text-medium opacity w-dyn-bind-empty"></p>
+      </div>
+      <div class="card-image-wrapper">
+        <p class="card-text-medium value desk">Объем</p>
+        <div bind="6b8d39a8-2e06-f9ec-45c0-b4834d546179" data-current="Tab 4" data-easing="ease" data-duration-in="300" data-duration-out="100" class="product-tabs w-tabs">
+          <div class="tabs-content-3 w-tab-content">
+            <div data-w-tab="Tab 4" class="product-image w-tab-pane w--tab-active"><img sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToImage&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;izobrazhenie---4-razmer&quot;}}}}}" loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="card-image w-dyn-bind-empty"></div>
+            <div data-w-tab="Tab 5" class="product-image w-tab-pane"><img sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToImage&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;izobrazhenie---5-razmer&quot;}}}}}" loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="card-image w-dyn-bind-empty"></div>
+          </div>
+          <div class="product-panel-tabs w-tab-menu">
+            <a data-w-tab="Tab 4" class="card-button-value w-inline-block w-tab-link w--current">
+              <div>20</div>
+            </a>
+            <a data-w-tab="Tab 5" class="card-button-value w-inline-block w-tab-link">
+              <div>216</div>
+            </a>
+          </div>
+        </div>
+        <div bind="ad262e98-fb4a-cd36-4de8-72e82f852fc9" data-current="Tab 2" data-easing="ease" data-duration-in="300" data-duration-out="100" class="product-tabs w-tabs">
+          <div class="tabs-content-3 w-tab-content">
+            <div data-w-tab="Tab 1" class="product-image w-tab-pane"><img width="Auto" sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToImage&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;izobrazhenie---1-razmer&quot;}}}}}" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" class="card-image w-dyn-bind-empty"></div>
+            <div data-w-tab="Tab 2" class="product-image w-tab-pane w--tab-active"><img width="Auto" sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToImage&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;izobrazhenie---5-litrov&quot;}}}}}" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" class="card-image w-dyn-bind-empty"></div>
+            <div data-w-tab="Tab 3" class="product-image w-tab-pane"><img sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToImage&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;izobrazhenie---3-razmer&quot;}}}}}" loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="card-image w-dyn-bind-empty"></div>
+            <div data-w-tab="Tab 4" class="product-image w-tab-pane"><img sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToImage&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;izobrazhenie---4-razmer&quot;}}}}}" loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="card-image w-dyn-bind-empty"></div>
+            <div data-w-tab="Tab 5" class="product-image w-tab-pane"><img sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToImage&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;izobrazhenie---5-razmer&quot;}}}}}" loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="card-image w-dyn-bind-empty"></div>
+          </div>
+          <div class="product-panel-tabs w-tab-menu">
+            <a data-w-tab="Tab 1" class="card-button-value w-inline-block w-tab-link">
+              <div>1</div>
+            </a>
+            <a data-w-tab="Tab 2" class="card-button-value w-inline-block w-tab-link w--current">
+              <div>5</div>
+            </a>
+            <a data-w-tab="Tab 3" class="card-button-value w-inline-block w-tab-link">
+              <div>10</div>
+            </a>
+            <a data-w-tab="Tab 4" class="card-button-value w-inline-block w-tab-link">
+              <div>20</div>
+            </a>
+            <a data-w-tab="Tab 5" class="card-button-value w-inline-block w-tab-link">
+              <div>216</div>
+            </a>
+          </div>
+        </div>
+        <div bind="1fdc829f-1f81-cd66-f750-b667dd98a2f6" data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="product-tabs w-tabs">
+          <div class="tabs-content-3 w-tab-content">
+            <div data-w-tab="Tab 1" class="product-image hidden-value w-tab-pane w--tab-active"><img sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToImage&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;izobrazhenie---5-litrov&quot;}}}}}" loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="card-image w-dyn-bind-empty"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-content">
+        <div class="card-heading-wrapper desk">
+          <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;tip-tovara&quot;}}}}}" class="card-text-medium text-22px w-dyn-bind-empty"></div>
+          <h1 sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;name&quot;}}}}}" class="card-heading main w-dyn-bind-empty"></h1>
+          <p sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;prinadlezhnost&quot;}}}}}" class="card-text-medium opacity w-dyn-bind-empty"></p>
+        </div>
+        <div class="card-discription-wrapper">
+          <div class="card-discription">
+            <p sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;opisanie&quot;}}}}}" class="card-text-medium description w-dyn-bind-empty"></p>
+            <div class="card-passport-wrapper">
+              <a bind="e5410a5c-2068-9122-e753-c84d62927f1d" data-w-id="e5410a5c-2068-9122-e753-c84d62927f1d" href="#" class="card-passport w-inline-block">
+                <p class="card-text-medium">Скачать технический паспорт</p>
+                <div class="document-icon">
+                  <p class="card-text-info desk">.pdf</p><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 32 32" fill="none" class="svg-download">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5 16C30.5 24.0081 24.0081 30.5 16 30.5C7.99187 30.5 1.5 24.0081 1.5 16C1.5 7.99187 7.99187 1.5 16 1.5C24.0081 1.5 30.5 7.99187 30.5 16ZM32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM16 25L20.3301 17.5L16.75 17.5V7H15.25L15.25 17.5H11.6698L16 25Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="card-button-wrapper"><button scroll="disable" class="card-button cyan modal_btn">Купить оптом</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-info-wrapper">
+      <div data-current="Описание" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
+        <div class="tabs-menu-2 w-tab-menu">
+          <a data-w-tab="Описание" class="tab-info w-inline-block w-tab-link w--current">
+            <div>Описание</div>
+          </a>
+          <a data-w-tab="Преимущества" class="tab-info w-inline-block w-tab-link">
+            <div>Преимущества</div>
+          </a>
+          <a data-w-tab="Отраслевые стандарты" class="tab-info w-inline-block w-tab-link">
+            <div>Отраслевые стандарты</div>
+          </a>
+          <a data-w-tab="Товарные вариации" class="tab-info w-inline-block w-tab-link">
+            <div>Товарные вариации</div>
+          </a>
+          <a data-w-tab="Применение и совместимость" class="tab-info w-inline-block w-tab-link">
+            <div>Применение и совместимость</div>
+          </a>
+          <a data-w-tab="Документы" class="tab-info w-inline-block w-tab-link">
+            <div>Документы</div>
+          </a>
+        </div>
+        <div class="tabs-content-2 w-tab-content">
+          <div data-w-tab="Описание" class="w-tab-pane w--tab-active">
+            <div class="card-hero-wrapper">
+              <div class="tab-left-wrapper">
+                <h3 class="product-heading">Описание</h3>
+              </div>
+              <div class="tab-right-wrapper">
+                <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoRichTextToRichTextChildren&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;podrobnoe-opisanie&quot;}}}}}" class="card-info-text w-dyn-bind-empty w-richtext"></div>
+              </div>
+            </div>
+            <div class="card-second-wrapper">
+              <div class="tab-left-wrapper">
+                <h3 class="product-heading">Эксплуатационный ресурс</h3>
+              </div>
+              <div class="tab-right-wrapper">
+                <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoRichTextToRichTextChildren&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;ekspluatacionnyy-resurs&quot;}}}}}" class="card-info-text w-dyn-bind-empty w-richtext"></div>
+              </div>
+            </div>
+          </div>
+          <div data-w-tab="Преимущества" class="w-tab-pane">
+            <div class="card-hero-wrapper">
+              <div class="tab-left-wrapper">
+                <h3 class="product-heading">Преимущества</h3>
+              </div>
+              <div class="tab-right-wrapper">
+                <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoRichTextToRichTextChildren&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;preimushchestva-formatirovannyy&quot;}}}}}" class="card-info-text w-dyn-bind-empty w-richtext"></div>
+              </div>
+            </div>
+          </div>
+          <div data-w-tab="Отраслевые стандарты" class="w-tab-pane">
+            <div class="card-hero-wrapper">
+              <div class="tab-left-wrapper">
+                <h3 class="product-heading">Отраслевые стандарты</h3>
+              </div>
+              <div class="tab-right-wrapper">
+                <p sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;standarty-i-dopuski-opisanie&quot;}}}}}" class="card-text-medium w-dyn-bind-empty"></p>
+                <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoRichTextToRichTextChildren&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;standarty-i-dopuski-3&quot;}}}}}" class="card-info-text-columns w-dyn-bind-empty w-richtext"></div>
+              </div>
+            </div>
+          </div>
+          <div data-w-tab="Товарные вариации" class="w-tab-pane">
+            <div class="card-hero-wrapper">
+              <div class="tab-left-wrapper">
+                <h3 class="product-heading">Товарные вариации</h3>
+              </div>
+              <div class="tab-right-wrapper">
+                <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoRichTextToRichTextChildren&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;tovarnye-variacii&quot;}}}}}" class="card-info-text w-dyn-bind-empty w-richtext"></div>
+              </div>
+            </div>
+            <div class="card-second-wrapper">
+              <div class="tab-left-wrapper">
+                <h3 class="product-heading">Информация об упаковке</h3>
+              </div>
+              <div class="tab-right-wrapper">
+                <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoRichTextToRichTextChildren&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;informaciya-ob-upakovke&quot;}}}}}" class="card-info-text w-dyn-bind-empty w-richtext"></div>
+              </div>
+            </div>
+          </div>
+          <div data-w-tab="Применение и совместимость" class="w-tab-pane">
+            <div class="card-hero-wrapper">
+              <div class="tab-left-wrapper">
+                <h3 class="product-heading">Применение и совместимость</h3>
+              </div>
+              <div class="tab-right-wrapper">
+                <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoRichTextToRichTextChildren&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;primenenie-i-sovmestimost&quot;}}}}}" class="card-info-text w-dyn-bind-empty w-richtext"></div>
+              </div>
+            </div>
+          </div>
+          <div data-w-tab="Документы" class="w-tab-pane">
+            <div class="card-hero-wrapper docs">
+              <div class="tab-left-wrapper">
+                <h3 class="product-heading">Документы</h3>
+              </div>
+              <div class="tab-right-wrapper">
+                <div class="document-wrapper">
+                  <a bind="84cc40b1-2bf1-eee6-dc82-736425b84c3b" href="#" class="document w-inline-block">
+                    <div data-w-id="84cc40b1-2bf1-eee6-dc82-736425b84c3c" class="document-content">
+                      <p class="card-text-medium">Технический лист описания</p>
+                      <div class="document-icon">
+                        <p class="card-text-info">.pdf</p><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 32 32" fill="none" class="svg-download">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5 16C30.5 24.0081 24.0081 30.5 16 30.5C7.99187 30.5 1.5 24.0081 1.5 16C1.5 7.99187 7.99187 1.5 16 1.5C24.0081 1.5 30.5 7.99187 30.5 16ZM32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM16 25L20.3301 17.5L16.75 17.5V7H15.25L15.25 17.5H11.6698L16 25Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                  <a bind="0c809a5c-dee9-ebe4-4215-4ee28179d5dc" href="#" class="document w-inline-block">
+                    <div data-w-id="0c809a5c-dee9-ebe4-4215-4ee28179d5dd" class="document-content">
+                      <p class="card-text-medium">Лабораторные испытания</p>
+                      <div class="document-icon">
+                        <p class="card-text-info">.pdf</p><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 32 32" fill="none" class="svg-download">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5 16C30.5 24.0081 24.0081 30.5 16 30.5C7.99187 30.5 1.5 24.0081 1.5 16C1.5 7.99187 7.99187 1.5 16 1.5C24.0081 1.5 30.5 7.99187 30.5 16ZM32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM16 25L20.3301 17.5L16.75 17.5V7H15.25L15.25 17.5H11.6698L16 25Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                  <a bind="7cfafe8c-96c7-d6bb-d77b-05cd615159e1" href="#" class="document w-inline-block">
+                    <div data-w-id="7cfafe8c-96c7-d6bb-d77b-05cd615159e2" class="document-content">
+                      <p class="card-text-medium">Декларация о соответствии</p>
+                      <div class="document-icon">
+                        <p class="card-text-info">.pdf</p><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 32 32" fill="none" class="svg-download">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5 16C30.5 24.0081 24.0081 30.5 16 30.5C7.99187 30.5 1.5 24.0081 1.5 16C1.5 7.99187 7.99187 1.5 16 1.5C24.0081 1.5 30.5 7.99187 30.5 16ZM32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM16 25L20.3301 17.5L16.75 17.5V7H15.25L15.25 17.5H11.6698L16 25Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                  <a bind="de833147-e199-1c26-cbc9-04342be7d27b" href="#" class="document w-inline-block">
+                    <div data-w-id="de833147-e199-1c26-cbc9-04342be7d27c" class="document-content">
+                      <p class="card-text-medium">Паспорт безопасности</p>
+                      <div class="document-icon">
+                        <p class="card-text-info">.pdf</p><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 32 32" fill="none" class="svg-download">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5 16C30.5 24.0081 24.0081 30.5 16 30.5C7.99187 30.5 1.5 24.0081 1.5 16C1.5 7.99187 7.99187 1.5 16 1.5C24.0081 1.5 30.5 7.99187 30.5 16ZM32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM16 25L20.3301 17.5L16.75 17.5V7H15.25L15.25 17.5H11.6698L16 25Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                  <a bind="f6230827-f130-9870-2667-bd2b651679d4" href="#" class="document w-inline-block">
+                    <div data-w-id="f6230827-f130-9870-2667-bd2b651679d5" class="document-content">
+                      <p class="card-text-medium">Технический лист описания</p>
+                      <div class="document-icon">
+                        <p class="card-text-info">.pdf</p><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 32 32" fill="none" class="svg-download">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5 16C30.5 24.0081 24.0081 30.5 16 30.5C7.99187 30.5 1.5 24.0081 1.5 16C1.5 7.99187 7.99187 1.5 16 1.5C24.0081 1.5 30.5 7.99187 30.5 16ZM32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM16 25L20.3301 17.5L16.75 17.5V7H15.25L15.25 17.5H11.6698L16 25Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="card-review product">
+    <div class="container-recomendation">
+      <div class="section-header review">
+        <div class="review-card-heading">
+          <h2 class="product-heading">Отзывы о продукте</h2>
+          <div class="line-review"></div>
+        </div>
+        <div class="review-slider-navigation"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 94 57" fill="none" id="testimonial-left" class="arrow-slider">
+            <path d="M52 38L36 28.1754L52 19.3333L52 38Z" fill="white"></path>
+          </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 94 57" fill="none" id="testimonial-right" class="arrow-slider">
+            <path d="M41.333 19.3335L57.333 29.1581L41.333 38.0002V19.3335Z" fill="white"></path>
+          </svg></div>
+      </div>
+      <div id="testimonial-slider" bind="7918181e-ef99-0888-b698-e6396f2e2298" class="swiper w-dyn-list">
+        <div bind="7918181e-ef99-0888-b698-e6396f2e2299" role="list" class="swiper-wrapper cc-testimonial w-dyn-items">
+          <div bind="7918181e-ef99-0888-b698-e6396f2e229a" role="listitem" class="swiper-slide cc-testimonial w-dyn-item">
+            <div class="review-wrapper">
+              <div class="review-info-wrapper">
+                <h3 sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;name&quot;}}}}}" class="review-heading w-dyn-bind-empty"></h3>
+                <p sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;otzyv&quot;}}}}}" class="review-info-text w-dyn-bind-empty"></p>
+              </div>
+              <a href="#" sym-bind="{&quot;json&quot;:{&quot;type&quot;:&quot;Record&quot;,&quot;val&quot;:{&quot;items&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToListOfLightboxMedia&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;dokument-izobrazhenie&quot;}}}}}}}" data-w-id="7918181e-ef99-0888-b698-e6396f2e229f" class="review-image-wrapper w-inline-block w-dyn-bind-empty w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" data-w-id="7918181e-ef99-0888-b698-e6396f2e22a0" sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToImage&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;dokument-izobrazhenie&quot;}}}}}" alt="" class="review-image w-dyn-bind-empty">
+                <div class="div-block-81"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 169 168" fill="none" class="arrow-scale desk">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.10582e-06 0.666748L2.98859 11.8203L6.36396 8.44492L51.2929 53.3739L52.7071 51.9596L7.77818 7.03071L11.1536 3.65533L4.10582e-06 0.666748ZM168.967 167.912L165.978 156.758L162.603 160.133L117.674 115.204L116.26 116.619L161.189 161.548L157.813 164.923L168.967 167.912ZM165.978 11.8203L168.967 0.666748L157.813 3.65533L161.189 7.03071L116.26 51.9596L117.674 53.3739L162.603 8.44492L165.978 11.8203ZM0 167.912L2.98858 156.758L6.36396 160.133L51.2929 115.204L52.7071 116.619L7.77817 161.548L11.1535 164.923L0 167.912Z" fill="currentColor"></path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 48 48" fill="none" class="arrow-scale mobile">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25146e-06 -0.000976562L1.48661 5.60434L3.16561 3.90801L14.4189 15.2774L15.1224 14.5667L3.86908 3.19729L5.54809 1.50096L1.25146e-06 -0.000976562ZM48.0033 48.0015L46.5167 42.3961L44.8377 44.0925L33.5844 32.7231L32.8809 33.4338L44.1342 44.8032L42.4552 46.4995L48.0033 48.0015ZM46.5167 5.60434L48.0033 -0.000976562L42.4552 1.50096L44.1342 3.19729L32.8809 14.5667L33.5844 15.2774L44.8377 3.90801L46.5167 5.60434ZM0 48.0015L1.48661 42.3961L3.16561 44.0925L14.4189 32.7231L15.1224 33.4338L3.86908 44.8032L5.54809 46.4995L0 48.0015Z" fill="currentColor"></path>
+                  </svg>
+                  <div class="div-block-82">
+                    <p class="review-image-text">Смотреть отзыв</p>
+                  </div>
+                </div>
+                <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div bind="7918181e-ef99-0888-b698-e6396f2e22aa" class="w-dyn-empty">
+          <div>No items found.</div>
+        </div>
+      </div>
+      <div class="swiper-pagination">
+        <div wb-swiper="pagination" class="wb-swiper_pagination">
+          <div wb-swiper="bullet-active" class="wb-swiper_bullet is-active"></div>
+          <div wb-swiper="bullet" class="wb-swiper_bullet"></div>
+        </div>
+        <div class="div-block-88"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 1527 26" fill="none" class="review-arrow desk">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1518.63 2.24144L1527 0L1524.76 8.36516L1522.23 5.83361L1507.22 20.844C1504.08 23.9853 1499.81 25.75 1495.37 25.75L0 25.75L0 24.25L1495.37 24.25C1499.42 24.25 1503.3 22.6433 1506.16 19.7834L1521.17 4.77294L1518.63 2.24144Z" fill="currentColor" fill-opacity="0.15"></path>
+          </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 991 26" fill="none" class="review-arrow table">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M982.635 2.24144L991 0L988.759 8.36516L986.227 5.83361L971.217 20.844C968.076 23.9853 963.815 25.75 959.373 25.75L0.5 25.75L0.5 24.25L959.373 24.25C963.417 24.25 967.296 22.6433 970.156 19.7834L985.167 4.77294L982.635 2.24144Z" fill="currentColor" fill-opacity="0.15"></path>
+          </svg></div>
+      </div>
+    </div>
+  </section>
+  <div data-w-id="d4666d44-955a-acb9-e37f-5eea7e9c0004" class="recomended slider-section">
+    <div class="container-recomendation w-container">
+      <div class="section-header">
+        <h2 class="card-heading recomdation-heading">Ассортимент продукции</h2>
+        <div class="slider-navigation-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 94 57" fill="none" class="arrow-slider prev-slide">
+            <path d="M52 38L36 28.1754L52 19.3333L52 38Z" fill="white"></path>
+          </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 94 57" fill="none" class="arrow-slider next-slide">
+            <path d="M41.333 19.3335L57.333 29.1581L41.333 38.0002V19.3335Z" fill="white"></path>
+          </svg></div>
+      </div>
+      <div bind="d4666d44-955a-acb9-e37f-5eea7e9c000f" class="slider-wrapper w-dyn-list">
+        <div bind="d4666d44-955a-acb9-e37f-5eea7e9c0010" role="list" class="slider-list w-dyn-items">
+          <div bind="d4666d44-955a-acb9-e37f-5eea7e9c0011" role="listitem" class="slider-item width w-dyn-item">
+            <div class="catalog-card">
+              <a bind="d4666d44-955a-acb9-e37f-5eea7e9c0013" href="#" class="product-card w-inline-block"><img sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoImageToImage&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;izobrazhenie-tovara&quot;}}}}}" loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="catalog-thumbnail recomdation-image w-dyn-bind-empty"></a>
+              <div class="catalog-card-info">
+                <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;tip-tovara&quot;}}}}}" class="text-18px-2 category-name w-dyn-bind-empty"></div>
+                <a bind="d4666d44-955a-acb9-e37f-5eea7e9c0017" href="#" class="product-card w-inline-block">
+                  <h3 sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;name&quot;}}}}}" class="product-heading-2 w-dyn-bind-empty"></h3>
+                </a>
+                <p sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;prinadlezhnost&quot;}}}}}" class="catalog-text-purpose w-dyn-bind-empty"></p>
+                <div class="catalog-card-detail">
+                  <p sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;svoystvo-nazvanie-v-miniatyure-tovara&quot;}}}}}" class="catalog-text-info w-dyn-bind-empty"></p>
+                  <p sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;svoystvo-znachenie-v-miniatyure-tovara&quot;}}}}}" class="catalog-text-info value w-dyn-bind-empty"></p>
+                </div>
+                <div class="faq-wrapper w-container">
+                  <div data-ix="fade-up-1" class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                      <div data-w-id="d4666d44-955a-acb9-e37f-5eea7e9c002a" class="accordion-header js-accordion-header">
+                        <p class="catalog-text-info">Назначение</p>
+                        <div class="js-accordion-icon">
+                          <div class="accordion__bar-vert"></div>
+                          <div class="accordion__bar-hor"></div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25 8.75V16H8.75V8.75H16V7.25H8.75V0H7.25V7.25H0V8.75H7.25Z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div data-ix="hide-on-load" class="accordion-body js-accordion-body">
+                        <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoPlainTextToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;opisanie&quot;}}}}}" class="accordion-text-info w-dyn-bind-empty"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a bind="d4666d44-955a-acb9-e37f-5eea7e9c0033" href="#" class="catalog-card-detail w-inline-block">
+                  <p class="catalog-text-info">Скачать технический паспорт</p><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 65 23" fill="none" class="svg-7">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 1H53.5C59.299 1 64 5.70101 64 11.5C64 17.299 59.299 22 53.5 22H11.5C5.70101 22 1 17.299 1 11.5C1 5.70101 5.70101 1 11.5 1ZM0 11.5C0 5.14873 5.14873 0 11.5 0H53.5C59.8513 0 65 5.14873 65 11.5C65 17.8513 59.8513 23 53.5 23H11.5C5.14873 23 0 17.8513 0 11.5ZM35.043 9.09871V15.3227H36.3847V9.09871H38.5091V8.00848H36.3568V7.37366C36.3568 6.95045 36.4592 6.63304 36.6642 6.42144C36.8692 6.20063 37.1674 6.09023 37.5587 6.09023C37.7544 6.09023 37.9407 6.12243 38.1177 6.18683C38.2948 6.24203 38.4532 6.32483 38.5929 6.43524L38.9982 5.42781C38.8119 5.28061 38.5836 5.1748 38.3134 5.1104C38.0525 5.0368 37.7777 5 37.4888 5C36.7062 5 36.1005 5.21621 35.6719 5.64862C35.2526 6.07183 35.043 6.64224 35.043 7.35986V8.00848H33.7852V9.09871H35.043ZM26.4536 14.9355C27.022 15.2483 27.6649 15.4047 28.3823 15.4047C29.0252 15.4047 29.5982 15.2667 30.1014 14.9907C30.4647 14.7847 30.7722 14.5092 31.0238 14.1641V15.3219H32.3096V5.08203H30.9679V9.12034C30.7184 8.79887 30.4203 8.543 30.0734 8.35272C29.5703 8.07671 29.0066 7.93871 28.3823 7.93871C27.6649 7.93871 27.022 8.09511 26.4536 8.40792C25.8946 8.72073 25.452 9.15774 25.1259 9.71896C24.7998 10.271 24.6367 10.9196 24.6367 11.6648C24.6367 12.41 24.7998 13.0632 25.1259 13.6245C25.452 14.1857 25.8946 14.6227 26.4536 14.9355ZM29.752 13.9281C29.3793 14.1397 28.96 14.2455 28.4941 14.2455C28.0189 14.2455 27.595 14.1397 27.2223 13.9281C26.8496 13.7165 26.5514 13.4175 26.3278 13.031C26.1042 12.6354 25.9924 12.18 25.9924 11.6648C25.9924 11.1404 26.1042 10.6896 26.3278 10.3124C26.5514 9.92596 26.8496 9.62695 27.2223 9.41535C27.595 9.20374 28.0189 9.09794 28.4941 9.09794C28.96 9.09794 29.3793 9.20374 29.752 9.41535C30.134 9.62695 30.4321 9.92596 30.6464 10.3124C30.87 10.6896 30.9819 11.1404 30.9819 11.6648C30.9819 12.18 30.87 12.6354 30.6464 13.031C30.4321 13.4175 30.134 13.7165 29.752 13.9281ZM19.7242 15.4035C19.1092 15.4035 18.5455 15.2655 18.033 14.9895C17.6892 14.7946 17.391 14.5374 17.1386 14.2178V17.998H15.7969V8.0065H17.0827V9.1557C17.3377 8.81702 17.6452 8.54895 18.0051 8.35151C18.5176 8.0755 19.0906 7.9375 19.7242 7.9375C20.4509 7.9375 21.0938 8.0939 21.6529 8.40671C22.2119 8.71952 22.6545 9.15653 22.9806 9.71775C23.3067 10.2698 23.4697 10.9184 23.4697 11.6636C23.4697 12.4088 23.3067 13.062 22.9806 13.6233C22.6545 14.1845 22.2119 14.6215 21.6529 14.9343C21.0938 15.2471 20.4509 15.4035 19.7242 15.4035ZM19.6123 14.2443C20.0875 14.2443 20.5115 14.1385 20.8842 13.9269C21.2662 13.7153 21.5643 13.4162 21.7786 13.0298C22.0023 12.6342 22.1141 12.1788 22.1141 11.6636C22.1141 11.1392 22.0023 10.6884 21.7786 10.3112C21.5643 9.92475 21.2662 9.62574 20.8842 9.41414C20.5115 9.20253 20.0875 9.09673 19.6123 9.09673C19.1465 9.09673 18.7225 9.20253 18.3405 9.41414C17.9678 9.62574 17.6697 9.92475 17.4461 10.3112C17.2318 10.6884 17.1246 11.1392 17.1246 11.6636C17.1246 12.1788 17.2318 12.6342 17.4461 13.0298C17.6697 13.4162 17.9678 13.7153 18.3405 13.9269C18.7225 14.1385 19.1465 14.2443 19.6123 14.2443ZM12.2795 15.1438C12.4659 15.3186 12.6895 15.406 12.9504 15.406C13.2019 15.406 13.4162 15.3186 13.5933 15.1438C13.7796 14.9598 13.8728 14.7298 13.8728 14.4538C13.8728 14.1778 13.7796 13.9524 13.5933 13.7776C13.4162 13.6028 13.2019 13.5154 12.9504 13.5154C12.6895 13.5154 12.4659 13.6028 12.2795 13.7776C12.0932 13.9524 12 14.1778 12 14.4538C12 14.7298 12.0932 14.9598 12.2795 15.1438ZM53.8867 12L51 17L48.1132 12H50.5L50.5 6H51.5L51.5 12L53.8867 12Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div bind="d4666d44-955a-acb9-e37f-5eea7e9c003b" class="w-dyn-empty">
+          <div>No items found.</div>
+        </div>
+      </div>
+      <a data-wait="Загрузка" href="/products#all" class="button-form branch w-inline-block">Каталог продукции<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 36 20" fill="none" class="svg-arrow">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666748 8.66699V0.666992H2.66675V8.66699C2.66675 10.8761 4.45761 12.667 6.66675 12.667H25.6667V7.89349L35.6667 13.667L25.6667 19.4405V14.667H6.66675C3.35304 14.667 0.666748 11.9807 0.666748 8.66699Z" fill="currentColor"></path>
+        </svg></a>
+    </div>
+  </div>
+  <section bind="c83c83ec-ff88-5b13-1442-4b314e8c6f22" class="footer">
+    <div class="footer-main">
+      <div sym-bind="{&quot;visibility&quot;:{&quot;type&quot;:&quot;Record&quot;,&quot;val&quot;:{&quot;conditions&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;7098a96f-ab53-e08c-be78-ed6a273a7028&quot;}}}}}" class="form-footer-wrapper footer-form">
+        <h2 class="footer-heading">Поможем вам подобрать подходящую продукцию</h2>
+        <div bind="c83c83ec-ff88-5b13-1442-4b314e8c6f27" class="form-block w-form">
+          <form id="wf-form-Contact" name="wf-form-Contact" data-name="Contact" method="post" data-wf-page-id="672b8b862512c20c15e46356" data-wf-element-id="c83c83ec-ff88-5b13-1442-4b314e8c6f28">
+            <div class="w-layout-grid grid"><input class="text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Имя *" type="text" id="Name" required=""><input class="text-field w-node-_5c246733-63ae-9b9d-1178-c587729a3882-4e8c6f22 w-input" maxlength="256" name="phone" data-name="phone" placeholder="8 (999) 000-00-00" type="number" id="phone" required=""><input class="text-field w-node-c83c83ec-ff88-5b13-1442-4b314e8c6f2b-4e8c6f22 w-input" maxlength="256" name="Email" data-name="Email" placeholder="E-mail *" type="email" id="Email" required=""><select id="Category" name="Category" data-name="Category" class="text-field selector w-node-c83c83ec-ff88-5b13-1442-4b314e8c6f2d-4e8c6f22 w-select">
+                <option value="">Категория продукции</option>
+                <option value="Автомобильные антифризы">Автомобильные антифризы</option>
+                <option value="Индустриальный антифриз">Индустриальный антифриз</option>
+                <option value="Теплоноситель для систем отопления">Теплоноситель для систем отопления</option>
+                <option value="Водно-гликолевые растворы и хладагенты">Водно-гликолевые растворы и хладагенты</option>
+                <option value="Гликолевые ингибиторы коррозии">Гликолевые ингибиторы коррозии</option>
+              </select></div><button data-wait="Загрузка" class="button-form submit-button w-button" type="submit">Отправить<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 36 20" fill="none" class="svg-arrow">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666748 8.66699V0.666992H2.66675V8.66699C2.66675 10.8761 4.45761 12.667 6.66675 12.667H25.6667V7.89349L35.6667 13.667L25.6667 19.4405V14.667H6.66675C3.35304 14.667 0.666748 11.9807 0.666748 8.66699Z" fill="currentColor"></path>
+              </svg></button>
+            <div href="#" class="text-14px underline">Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#" class="link-2">политикой конфиденциальности</a> и <a href="#" class="link-2">обработки персональных данных</a>
+            </div>
+          </form>
+          <div class="success-message w-form-done">
+            <div class="text-block-6">Спасибо, ваша заявка принята!</div>
+          </div>
+          <div class="error-message w-form-fail">
+            <div class="text-block-5">Ошибка отправки формы!</div>
+          </div>
+        </div>
+        <div class="white-bg"></div>
+      </div>
+      <div sym-bind="{&quot;visibility&quot;:{&quot;type&quot;:&quot;Record&quot;,&quot;val&quot;:{&quot;conditions&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;824ab149-3314-ba76-f31d-b3b9521804ec&quot;}}}}}" class="footer-wrapper">
+        <div class="footer-content-left">
+          <div class="footer-logo-wrapper">
+            <a href="index.html" class="w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 292 50" fill="none" class="magna-logo">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M270.727 3.54248C269.733 1.3916 267.611 0 265.316 0H261.979C259.599 0 257.398 1.44385 256.376 3.66895L235.164 49.6836H245.327L250.301 38.5947H276.859L281.833 49.6836H291.995L270.727 3.54248ZM254.053 30.23L262.358 9.7417C262.586 9.15381 263.094 8.78906 263.637 8.81152C264.116 8.83398 264.537 9.16113 264.766 9.65234L273.106 30.23H254.053ZM49.799 0.878418C49.506 1.49609 42.495 16.5889 32.9039 37.2554C32.7396 37.665 32.3679 37.9478 31.9534 37.9702C31.4817 37.9922 31.0458 37.687 30.8742 37.2036C21.3047 16.5889 14.2865 1.50391 13.9577 0.878418C13.7433 0.461914 13.4074 0.246094 13.4074 0.246094C13.1716 0.097168 12.9 0.0078125 12.6213 0.0078125H0V49.6987H9.09076V12.5552C9.09076 12.5381 9.09213 12.522 9.09485 12.5063C9.09921 12.4819 9.10709 12.4604 9.11844 12.4414C9.13196 12.4189 9.15039 12.3999 9.17377 12.3848C9.19284 12.3721 9.21518 12.3623 9.24081 12.3545C9.27341 12.3447 9.30298 12.3423 9.32974 12.3467C9.38516 12.356 9.42865 12.3955 9.46237 12.4658L13.1155 20.1519C16.7287 27.7534 20.3408 35.353 23.949 42.9561C24.0562 43.2686 24.2348 43.7153 24.5493 44.1841C26.3289 46.8262 30.1024 46.8408 31.9248 46.8486H31.9605C33.4879 46.8486 37.8608 46.8491 39.2932 44.1543C39.3492 44.0469 39.3967 43.9443 39.4367 43.8496C39.4937 43.7148 39.5354 43.5957 39.5648 43.4995C41.9862 38.3794 44.4093 33.2612 46.8325 28.1431C49.3156 22.8984 51.7988 17.6533 54.2801 12.4062C54.3229 12.3096 54.3944 12.2725 54.5016 12.2949C54.6017 12.3169 54.6517 12.3843 54.6517 12.4956V49.6914H63.7424V0.0078125H51.1212C50.9854 0.0078125 50.5995 0.0224609 50.235 0.305664C49.9634 0.513672 49.8347 0.774414 49.7847 0.885742L49.799 0.878418ZM100.457 0C102.751 0 104.874 1.3916 105.867 3.54248L127.136 49.6836H116.973L111.999 38.5947H85.4417L80.4675 49.6836H70.3047L91.5164 3.66895C92.5384 1.44385 94.7396 0 97.1195 0H100.457ZM97.4983 9.7417L89.1937 30.23H108.247L99.9068 9.65234C99.6781 9.16113 99.2564 8.83398 98.7776 8.81152C98.2344 8.78906 97.727 9.15381 97.4983 9.7417ZM220.281 20.2427H189.728V0.0078125H180.266V49.6914H189.728V29.0693H220.038V49.6914H230.029V0.0078125H220.159L220.281 20.2427ZM135.738 2.15137C137.746 0.0600586 140.226 0.0078125 140.698 0.0078125H173.595V8.78955C168.52 8.80811 163.444 8.82471 158.368 8.84131C153.292 8.85791 148.216 8.875 143.142 8.89355V49.6987H133.68V7.31592C133.68 5.29932 134.466 3.47607 135.738 2.15137Z" fill="currentColor"></path>
+              </svg></a>
+          </div>
+          <div class="footer-content-wrapper">
+            <div id="w-node-_4c098c7a-ab5b-183d-991c-d8e79bc009ef-4e8c6f22" class="column-footer _2">
+              <a href="/#branch" class="text-24px _400">Отраслевые решения</a>
+              <a href="/products#all" class="text-24px _400">Каталог продукции</a>
+            </div>
+            <div id="w-node-_4c098c7a-ab5b-183d-991c-d8e79bc009f4-4e8c6f22" class="column-footer _3">
+              <a href="blog.html" class="text-24px _400">База знаний</a>
+              <a href="contact.html" class="text-24px _400">Контакты</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content-right">
+          <div class="f-wrapper-inside">
+            <div id="w-node-_4c098c7a-ab5b-183d-991c-d8e79bc009fd-4e8c6f22" class="column-footer">
+              <a href="tel:+78001015093" class="text-24px _400">8 800 444 04 71</a>
+              <a href="mailto:info@magnaural.ru" class="text-24px right mobile">info@magnaural.ru</a>
+            </div>
+            <div id="w-node-_4c098c7a-ab5b-183d-991c-d8e79bc00a00-4e8c6f22" class="column-footer right">
+              <a href="mailto:info@magnaural.ru" class="text-24px right desk">info@magnaural.ru</a>
+              <div class="footer-social-wrapper">
+                <a href="#" class="text-24px right trans">Telegram</a>
+                <a href="#" class="text-24px right trans">Вконтакте</a>
+                <a href="#" class="text-24px right trans">WhatsApp</a>
+                <a href="#" class="text-24px right trans">Youtube</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-bg-block">
+          <div class="partners-line light hide"></div>
+          <div class="partners-line-second light"></div>
+        </div>
+      </div>
+      <div class="div-block-90">
+        <div class="footer-line-round"></div>
+      </div>
+    </div>
+    <div class="footer-image">
+      <div class="footer-wrapper-text">
+        <div class="wrapper-text-footer">
+          <a href="#" class="text-18px underline">Политика конфиденциальности</a>
+          <a href="#" class="text-18px light">Согласие на обработку персональных данных</a>
+        </div>
+        <a href="https://www.cultbrand.ru/" target="_blank" class="wrapper-logo-footer w-inline-block">
+          <div class="text-18px logo">Сделано в</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 113 25" fill="none" class="cult-logo">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.6806 0H26.9302V24.802H31.6806V0ZM6.8431 22.5264V15.4471H6.84633H11.5968V20.3322C11.5968 22.9094 9.51704 24.9998 6.9529 24.9998H4.64388C2.07973 24.9998 0 22.9094 0 20.3322V8.45863C0 5.88138 2.07973 3.79102 4.64065 3.79102H6.94968C9.51382 3.79102 11.5936 5.88138 11.5936 8.45863V13.3437H6.8431V6.2644H4.75045V22.5264H6.8431ZM13.3892 20.3324V3.99902H13.3924H18.1428V22.5299H20.2452V3.99902H24.9956V20.3324C24.9956 22.9097 22.9159 25.0001 20.3518 25.0001H18.033C15.4689 25.0001 13.3892 22.9097 13.3892 20.3324ZM60.2413 4.33696C60.8964 3.98664 61.6418 3.78543 62.4357 3.78516C64.9991 3.78603 67.0779 5.87606 67.0779 8.45278V12.3933H62.3275V6.25529H60.2348V24.8024H55.4844V3.99614H59.5534L59.7536 4.65506L60.2413 4.33696ZM49.0483 3.78473C48.2474 3.78473 47.4918 3.98922 46.833 4.34952V0H42.0825V24.802H46.1516L46.355 24.1204C47.1139 24.6657 48.044 24.9903 49.0483 24.9903C51.6125 24.9903 53.6922 22.8999 53.6922 20.3226V8.45235C53.6922 5.8751 51.6125 3.78473 49.0483 3.78473ZM48.9418 22.5201H46.8491V6.25487H48.9418V22.5201ZM86.0666 4.65831C86.8251 4.11004 87.7546 3.7855 88.7616 3.78516C91.325 3.78603 93.4038 5.87606 93.4038 8.45278V24.8024H88.6534V6.25529H86.5607V22.5238L86.5478 22.5108V24.8057H81.7974V3.99939H85.8664L86.0666 4.65831ZM102.068 0V4.34627C101.409 3.98598 100.657 3.78149 99.8529 3.78149C97.2887 3.78149 95.209 5.87185 95.209 8.44911V20.3226C95.209 22.8999 97.2887 24.9903 99.8529 24.9903C100.857 24.9903 101.784 24.6657 102.546 24.1204L102.75 24.802H106.819V0H102.068ZM102.055 22.5201H99.9627V6.25487H102.055V22.5201ZM38.3652 3.99896H41.333V6.4691H38.3652V24.802H33.6147V0H38.3652V3.99896ZM75.1804 3.77539H72.865C70.3008 3.77539 68.2211 5.86576 68.2211 8.44301V10.2477H72.9715V6.24877H75.0739V8.65075C75.0739 10.2374 73.4649 11.0899 71.7061 12.0218C69.5864 13.145 67.249 14.3834 67.249 17.1615V20.3198C67.249 22.897 69.3288 24.9874 71.8929 24.9874C73.0942 24.9874 74.3989 24.5265 75.4485 23.7734L75.7553 24.7992H79.8243V8.44301C79.8243 5.86576 77.7446 3.77539 75.1804 3.77539ZM75.0674 22.5108H72.9748V14.1818L75.0674 12.8574V22.5108ZM112.125 2.60301H111.812L111.802 2.57379C111.786 2.5251 111.773 2.46992 111.766 2.41474C111.76 2.35956 111.757 2.29789 111.753 2.22973C111.753 2.1783 111.749 2.13502 111.746 2.09989L111.744 2.07392C111.734 2.00251 111.711 1.95382 111.673 1.92461C111.631 1.8954 111.56 1.87917 111.463 1.87917H110.804V2.59976H110.549V0.833984H111.395C111.821 0.833984 112.038 0.999526 112.038 1.33061C112.038 1.45071 112.012 1.54808 111.96 1.62274C111.928 1.66818 111.886 1.70713 111.834 1.73959C111.876 1.75907 111.905 1.78179 111.928 1.81425C111.967 1.86618 111.992 1.95058 112.005 2.06418C112.006 2.07895 112.008 2.0945 112.01 2.11127L112.01 2.11127C112.013 2.14244 112.016 2.17778 112.018 2.21999L112.028 2.36281C112.028 2.39202 112.034 2.42448 112.044 2.46019C112.054 2.49264 112.063 2.51861 112.076 2.53484L112.128 2.60625L112.125 2.60301ZM110.801 1.63572H111.372C111.518 1.63572 111.624 1.613 111.689 1.57081C111.747 1.52861 111.776 1.46045 111.776 1.35658C111.776 1.25271 111.747 1.1813 111.686 1.14559C111.621 1.10339 111.508 1.08392 111.35 1.08392H110.801V1.63572ZM109.512 1.75279C109.512 2.72007 110.294 3.50558 111.256 3.50558C112.218 3.50558 113 2.72007 113 1.75279C113 0.78551 112.215 0 111.256 0C110.297 0 109.512 0.78551 109.512 1.75279ZM109.732 1.75279C109.732 0.908855 110.416 0.220722 111.256 0.220722C112.096 0.220722 112.78 0.908855 112.78 1.75279C112.78 2.59673 112.096 3.28486 111.256 3.28486C110.416 3.28486 109.732 2.59673 109.732 1.75279Z" fill="currentColor"></path>
+          </svg>
+        </a>
+      </div>
+      <div data-poster-url="https://cdn.prod.website-files.com/668bcd1d9438984e5d195567%2F66d58f25ff921d0231e2c3bb_Magna%20Fluid%2001%20%5B15%5D-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/66e2a47fe62ad7fbac8a81a0/66e2a47fe62ad7fbac8a8258_Magna%20Fluid%2001%20%5B15%5D-transcode.mp4,https://cdn.prod.website-files.com/66e2a47fe62ad7fbac8a81a0/66e2a47fe62ad7fbac8a8258_Magna%20Fluid%2001%20%5B15%5D-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="bg-video footer w-background-video w-background-video-atom"><video id="06082a40-1a2f-7eca-3822-9189fd9a90c8-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/668bcd1d9438984e5d195567%2F66d58f25ff921d0231e2c3bb_Magna%20Fluid%2001%20%5B15%5D-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+          <source src="https://cdn.prod.website-files.com/66e2a47fe62ad7fbac8a81a0/66e2a47fe62ad7fbac8a8258_Magna%20Fluid%2001%20%5B15%5D-transcode.mp4" data-wf-ignore="true">
+          <source src="https://cdn.prod.website-files.com/66e2a47fe62ad7fbac8a81a0/66e2a47fe62ad7fbac8a8258_Magna%20Fluid%2001%20%5B15%5D-transcode.webm" data-wf-ignore="true">
+        </video></div>
+    </div>
+    <div bind="a984dc39-5fd7-d7d9-bd4a-082f6fa5a68b" class="w-embed">
+      <style>
+/*Поменять направление контейнера*/
+  @media (max-width: 1200px) {
+    .f-wrapper-right-inside {
+      flex-direction: column; /* Change to vertical */
+      align-items: flex-end; /* Align to the right */
+    }
+  } 
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+</style>
+    </div>
+  </section>
+  <div class="modal-buy overflow__hidden">
+    <div scroll="both" data-w-id="1587e495-de5b-ea58-3390-204d968cad59" class="modal-overlay-buy modal_btn"></div>
+    <div style="-webkit-transform:translate3d(0, 100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="modal-content-bye">
+      <div class="form-footer-wrapper">
+        <h2 class="heading-4">Купить оптом</h2>
+        <p class="contact-modal-text">Оставьте заявку и мы свяжемся с вами в ближайшее время для уточнения деталей заказа.</p>
+        <div bind="5443c4a7-f542-269d-edc6-2c59b7ae0287" class="form-block modal-form w-form">
+          <form id="Wholesale" name="wf-form-Wholesale" data-name="Wholesale" method="post" data-wf-page-id="672b8b862512c20c15e46356" data-wf-element-id="5443c4a7-f542-269d-edc6-2c59b7ae0288">
+            <div class="w-layout-grid grid buy"><input class="text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Имя *" type="text" id="Name-2" required=""><input class="text-field w-node-cc8727ec-cab2-27b1-7c8b-4fc641829645-15e46356 w-input" maxlength="256" name="Company-name" data-name="Company-name" placeholder="Наименование компании" type="text" id="Company-name-2"><input class="text-field w-node-f60f7d58-140a-1516-bccc-4b5bd29b1883-15e46356 w-input" maxlength="256" name="phone-2" data-name="Phone 2" placeholder="8 (999) 000-00-00" type="number" id="phone-2" required=""><input class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="E-mail *" type="email" id="Email-2" required=""></div><button data-wait="Загрузка" class="button-form submit-button w-button" type="submit">Отправить<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 36 20" fill="none" class="svg-arrow">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666748 8.66699V0.666992H2.66675V8.66699C2.66675 10.8761 4.45761 12.667 6.66675 12.667H25.6667V7.89349L35.6667 13.667L25.6667 19.4405V14.667H6.66675C3.35304 14.667 0.666748 11.9807 0.666748 8.66699Z" fill="currentColor"></path>
+              </svg></button>
+            <div href="#" class="text-14px underline">Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#" class="link-text">политикой конфиденциальности</a> и <a href="#" class="link-text">обработки персональных данных</a>
+            </div>
+          </form>
+          <div class="success-message w-form-done">
+            <div>Спасибо, ваша заявка принята!</div>
+          </div>
+          <div class="error-message w-form-fail">
+            <div>Ошибка отправки формы!</div>
+          </div>
+        </div>
+      </div>
+      <div scroll="both" data-w-id="5443c4a7-f542-269d-edc6-2c59b7ae02a0" class="buy-close-button modal_btn"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 22 21" fill="none" class="cross">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3693 20.9298L0.570312 1.13084L1.63097 0.0701763L21.43 19.8692L20.3693 20.9298Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.568198 19.8692L20.3672 0.0701752L21.4278 1.13084L1.62886 20.9298L0.568198 19.8692Z" fill="currentColor"></path>
+        </svg></div>
+    </div>
+  </div>
+  <div bind="c3d6b5f4-f8df-74cd-3338-a8250600b821" class="w-embed">
+    <style>
+  html { font-size: 1rem }
+  @media screen and (max-width:1920px) { html { font-size: calc(0.49999999999999994rem + 0.41666666666666674vw); } }
+  @media screen and (max-width:1440px) { html { font-size: calc(0.47410913140311806rem + 0.4454342984409799vw); } }
+  @media screen and (max-width:991px) { html { font-size: calc(0.32198660714285715rem + 0.8928571428571428vw); } }
+  @media screen and (max-width:767px) { html { font-size: calc(0.7921006944444444rem + 0.6944444444444444vw); } }
+  @media screen and (max-width:479px) { html { font-size: calc(0.24369747899159666rem + 3.361344537815126vw); } }
+  @media screen and (max-width:360px) { html { font-size: calc(0.8746518105849582rem + 0.5571030640668523vw); } }
+</style>
+    <style>
+  .Recomended.Slider-Section{
+    will-change: transform;
+  }
+</style>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=672b8b862512c20c15e4634c" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script><!--  Аккордеон  -->
+  <script>
+// Accordion Settings 
+const accSettings = {
+  speed: 400, // Animation speed
+  oneOpen: true, // Close all other accordion items if true
+  offsetAnchor: false, // Activate scroll to top for active item
+  offsetFromTop: 180, // In pixels – Scroll to top at what distance
+  scrollTopDelay: 400, // In Milliseconds – Delay before scroll to top 
+  classes: {
+  	accordion: 'js-accordion',
+    header: 'js-accordion-header',
+    item: 'js-accordion-item',
+    body: 'js-accordion-body',
+    icon: 'js-accordion-icon',
+    active: 'active',
+  }
+};
+const prefix = accSettings.classes
+const accordion = (function(){
+  const accordionElem = $(`.${prefix.accordion}`)
+  const accordionHeader = accordionElem.find(`.${prefix.header}`)
+  const accordionItem = $(`.${prefix.item}`)
+  const accordionBody = $(`.${prefix.body}`)
+  const accordionIcon = $(`.${prefix.icon}`)
+  const activeClass = prefix.active
+  return {
+    // pass configurable object literal
+    init: function(settings) {
+      accordionHeader.on('click', function() {
+        accordion.toggle($(this));
+        if(accSettings.offsetAnchor) {
+        	setTimeout(() => { 
+        		$('html').animate({scrollTop: $(this).offset().top-accSettings.offsetFromTop}, accSettings.speed);
+    			}, accSettings.scrollTopDelay);
+        }
+      });
+      $.extend(accSettings, settings); 
+      // ensure only one accordion is active if oneOpen is true
+      if(settings.oneOpen && $(`.${prefix.item}.${activeClass}`).length > 1) {
+        $(`.${prefix.item}.${activeClass}:not(:first)`).removeClass(activeClass).find(`.${prefix.header} > .${prefix.icon}`).removeClass(activeClass);
+      }
+      // reveal the active accordion bodies
+      $(`.${prefix.item}.${activeClass}`).find(`> .${prefix.body}`).show();
+    },
+    toggle: function($this) {
+      if(accSettings.oneOpen && $this[0] != $this.closest(accordionElem).find(`> .${prefix.item}.${activeClass} > .${prefix.header}`)[0]) {
+        $this.closest(accordionElem).find(`> .${prefix.item}`).removeClass(activeClass).find(accordionBody).slideUp(accSettings.speed);
+        $this.closest(accordionElem).find(`> .${prefix.item}`).find(`> .${prefix.header} > .${prefix.icon}`).removeClass(activeClass);
+      }
+      // show/hide the clicked accordion item
+      $this.closest(accordionItem).toggleClass(`${activeClass}`).find(`> .${prefix.header} > .${prefix.icon}`).toggleClass(activeClass);
+      $this.next().stop().slideToggle(accSettings.speed);
+    }
+  }
+})();
+$(document).ready(function(){
+  accordion.init(accSettings);
+});
+</script>
+  <!--  Видео Vimeo  -->
+  <script>
+// Define the custom property 'playing' for the HTMLMediaElement prototype
+Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+	get: function () {
+		return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+	}
+});
+// Add event listeners for click and touchstart on the entire document body
+document.body.addEventListener("click", playVideoOnLowPower);
+document.body.addEventListener("touchstart", playVideoOnLowPower);
+// Function to play video when user interacts with the page
+function playVideoOnLowPower() {
+	try {
+		const videoElements = document.querySelectorAll("video");
+			for (let i = 0; i < videoElements.length; i++) {
+				if (videoElements[i].playing) {
+					// video is already playing, so do nothing
+					console.log('Playing');
+					} else {
+						// video is not playing, so play video now
+						videoElements[i].play();
+					console.log('Not Playing');
+				}
+			}
+		} catch (err) {
+		console.log(err);
+	}
+}
+</script>
+  <!--  💙 MEMBERSCRIPT #41 v0.1 💙 PERFECT PHONE NUMBER INPUTS  -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('input[ms-code-phone-number]').each(function() {
+      var input = this;
+      var preferredCountries = $(input).attr('ms-code-phone-number').split(',');
+      var iti = window.intlTelInput(input, {
+        preferredCountries: preferredCountries,
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+      });
+      $.get("https://ipinfo.io", function(response) {
+        var countryCode = response.country;
+        iti.setCountry(countryCode);
+      }, "jsonp");
+      input.addEventListener('change', formatPhoneNumber);
+      input.addEventListener('keyup', formatPhoneNumber);
+      // Валидация ввода только цифр
+      input.addEventListener('keypress', function(e) {
+        var charCode = (e.which) ? e.which : e.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+          e.preventDefault();
+        }
+      });
+      function formatPhoneNumber() {
+        var formattedNumber = iti.getNumber(intlTelInputUtils.numberFormat.NATIONAL);
+        input.value = formattedNumber;
+      }
+      var form = $(input).closest('form');
+      form.submit(function() {
+        var formattedNumber = iti.getNumber(intlTelInputUtils.numberFormat.INTERNATIONAL);
+        input.value = formattedNumber;
+      });
+    });
+  });
+</script>
+  <script>
+    // Stop body scroll when mobile menu is open
+    const body = document.body;
+    function letBodyScroll(bool) {
+        if (bool) {
+                body.style.overflow = 'hidden';
+        } else {
+            body.style.overflow = 'auto';
+        }
+    }
+    const targetNode = document.querySelector('.w-nav-button');
+    const config = { attributes: true, childList: false, subtree: false };
+    const callback = function (mutationsList, observer) {
+        for (let i = 0; i < mutationsList.length; i++) {
+            if (mutationsList[i].type === 'attributes') {
+                const menuIsOpen = mutationsList[i].target.classList.contains('w--open');
+                letBodyScroll(menuIsOpen);
+            }
+        }
+    };
+    const observer = new MutationObserver(callback);
+    observer.observe(targetNode, config);
+</script>
+  <!--  Плавный скролл  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+  <script>
+SmoothScroll({
+// Время скролла 400 = 0.4 секунды
+animationTime : 400,
+// Размер шага в пикселях
+stepSize : 80,
+// Дополнительные настройки:
+// Ускорение
+accelerationDelta : 30,
+// Максимальное ускорение
+accelerationMax : 2,
+// Поддержка клавиатуры
+keyboardSupport : true,
+// Шаг скролла стрелками на клавиатуре в пикселях
+arrowScroll : 50,
+// Pulse (less tweakable)
+// ratio of "tail" to "acceleration"
+pulseAlgorithm : true,
+pulseScale : 4,
+pulseNormalize : 1,
+// Поддержка тачпада
+touchpadSupport : true,
+})
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable({ containment: "parent" });  } );
+  </script>
+  <!--  Ссылки для вкладок  -->
+  <script>
+  var Webflow = Webflow || [];
+  Webflow.push(() => {
+    function changeTab(shouldScroll = false) {
+      const hashSegments = window.location.hash.substring(1).split('/');
+      const offset = 90; // change this to match your fixed header height if you have one
+      let lastTabTarget;
+      for (const segment of hashSegments) {
+        const tabTarget = document.querySelector(`[data-w-tab="${segment}"]`);
+        if (tabTarget) {
+          tabTarget.click();
+          lastTabTarget = tabTarget;
+        }
+      }
+      if (shouldScroll && lastTabTarget) {
+        window.scrollTo({
+          top: $(lastTabTarget).offset().top - offset, behavior: 'smooth'
+        });
+      }
+    }
+    const tabs = document.querySelectorAll('[data-w-tab]');
+    tabs.forEach(tab => {
+      const dataWTabValue = tab.dataset.wTab;
+      const parsedDataTab = dataWTabValue.replace(/\s+/g,"-").toLowerCase();
+      tab.dataset.wTab = parsedDataTab;
+      tab.addEventListener('click', () => {
+        history.pushState({}, '', `#${parsedDataTab}`);
+      });
+    });
+  	if (window.location.hash) {
+      requestAnimationFrame(() => { changeTab(true); });
+    }
+    window.addEventListener('hashchange', () => { changeTab() });
+  });
+</script>
+  <!--  [Attributes by Finsweet] CMS Filter  -->
+  <script async="" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsfilter@1/cmsfilter.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!--  To see changes refresh without cache CMD+Shift+R or Ctrl+F5  -->
+  <!--  or use Cache Killer Chrome Extension  -->
+  <script>
+// add library before code <link rel="stylesheet"
+// href="https://unpkg.com/swiper/swiper-bundle.min.css" /> <script
+// src="https://unpkg.com/swiper/swiper-bundle.min.js">
+$(document).ready(function () {
+      var slider_wrapper = new Swiper(".slider-wrapper", {
+          wrapperClass: "slider-list",
+      slideClass: "slider-item",
+      navigation: {
+        nextEl: '.next-slide',
+        prevEl: '.prev-slide'
+      },
+  speed: 700,
+   slidesPerView: 'auto',
+  loop: false,
+        on: {
+          init: function () {
+              var swiper_pagination_bulletwe_style = document.createElement('style'); swiper_pagination_bulletwe_style.type = 'text/css'; swiper_pagination_bulletwe_style.innerHTML =
+      ` .swiper-pagination-bullet{   background:#1951A0; 
+    margin-right:24px;
+    transition:.2s;
+   } `;
+      document.getElementsByTagName('head')[0].appendChild(swiper_pagination_bulletwe_style);var swiper_pagination_bullethoverwe_style = document.createElement('style'); swiper_pagination_bullethoverwe_style.type = 'text/css'; swiper_pagination_bullethoverwe_style.innerHTML =
+      ` .swiper-pagination-bullet:hover{   opacity:.7;
+   } `;
+      document.getElementsByTagName('head')[0].appendChild(swiper_pagination_bullethoverwe_style);var swiper_pagination_bullet_activehoverwe_style = document.createElement('style'); swiper_pagination_bullet_activehoverwe_style.type = 'text/css'; swiper_pagination_bullet_activehoverwe_style.innerHTML =
+      ` .swiper-pagination-bullet-active:hover{   opacity:1;
+   } `;
+      document.getElementsByTagName('head')[0].appendChild(swiper_pagination_bullet_activehoverwe_style);var swiper_pagination_fractionwe_style = document.createElement('style'); swiper_pagination_fractionwe_style.type = 'text/css'; swiper_pagination_fractionwe_style.innerHTML =
+      ` .swiper-pagination-fraction{   font-size:16px;
+   } `;
+      document.getElementsByTagName('head')[0].appendChild(swiper_pagination_fractionwe_style);var slide_imagewe_style = document.createElement('style'); slide_imagewe_style.type = 'text/css'; slide_imagewe_style.innerHTML =
+      ` .slide-image{   transition:transform .2s;
+   } `;
+      document.getElementsByTagName('head')[0].appendChild(slide_imagewe_style);var slide_contentwe_style = document.createElement('style'); slide_contentwe_style.type = 'text/css'; slide_contentwe_style.innerHTML =
+      ` .slide-content{   transition:opacity .2s;
+   } `;
+      document.getElementsByTagName('head')[0].appendChild(slide_contentwe_style);$('.slider-item').on('mouseover',function() {
+    $(this).find('.slide-image').css({
+      'transform':'scale(1.1)',
+    });
+    $(this).find('.slide-content').css({
+      'opacity':'.8',
+    });
+  });
+  $('.slider-item').on('mouseout',function() {
+    $(this).find('.slide-image').css({
+      'transform':'scale(1)',
+    });
+    $(this).find('.slide-content').css({
+      'opacity':'1',
+    });
+  });
+          },
+        },
+      });
+    });
+ </script>
+  <!--  Swiper slider core  -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+  //----- Testimonial Slider Config -----
+  const newsSwiper = new Swiper("#testimonial-slider", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
+    autoHeight: true,
+    keyboard: true,
+    pagination: {
+      el: ".wb-swiper_pagination",
+      bulletClass: "wb-swiper_bullet",
+      bulletActiveClass: "is-active",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: "#testimonial-right",
+      prevEl: "#testimonial-left",
+    }
+  });
+</script>
+</body>
+</html>
